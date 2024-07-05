@@ -40,7 +40,7 @@
     border-radius: 3px 0 0 3px;
 }
 
-/**/
+/*Usado para dar um fundo às setas de passagem das imagens*/
 .anterior:hover,
 .proximo:hover {
     background-color: rgba(0, 0, 0, 0.8);
@@ -66,7 +66,7 @@
     top: 0;
 }
 
-/**/
+/*Utiliza-se o cursor: pointer para criar interação ao passar o curso pelo elemento ponto, em seguida adiciona-se uma largura e altura de 15px para criar volume ao elemento, o tornando num quadrado. utilizando a margin, atribui uma distancia entre os pontos de 2px, em seguida incorpora uma cor de fundo para todos os três pontos, e os torna círculos com o border-radius 50%. O display: inline-block vem para ser possivel todos os pontos estarem na mesma linha e possuir largura e altura. Por fim, adiciona-se uma transição suave para cada ponto*/
 .ponto {
     cursor: pointer;
     height: 15px;
