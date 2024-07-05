@@ -1,17 +1,23 @@
+/*Parte 1: Comentar as Linhas de CSS - Analise o arquivo style.css e faça comentários explicativos em cada linha de código. Descreva o propósito de cada estilo e como ele contribui para a aparência e o layout do slideshow.*/
+
+/* o box-sizing: border-box retira a barra de rolamento inferior deixando todos os elementos no centro*/
 * {
     box-sizing: border-box
 }
 
+/*O position: relative mantém todos os itens da div slideshow-container na mesma posição das imagens*/
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
 
+/**/
 .mySlides {
     display: none;
 }
 
+/*O cursor: pointer cria a interação de ao passar com o cursor, indicar que seja um botão com o link para a proxima imagem. Em seguida é usado o position: absolute para trazer todos os elementos para sobre a imagem, e o top:50% para ficar no centro. Adiciona-se então o margin-top em -22 para subir o elemento seta até o centro, e em seguida um padding de 16px para distanciar das bordas. Muda-se então a cor para white, seleciona o modo bold para o elemento, e modifica o tamanho da font para 18px. Em seguida adiciona também uma transição: ease onde é possível deixar suave o efeito, finaliza-se então adicionando*/
 .anterior,
 .proximo {
     cursor: pointer;
@@ -28,16 +34,19 @@
     user-select: none;
 }
 
+/*Estilo usado nesse caso para posicionar a seta proximo para o lado direito*/
 .proximo {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
+/**/
 .anterior:hover,
 .proximo:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+/*Esses estilos se referem ao texto legenda da cada imagem, com o nome dos animais, define-se então cor do texto, tamanho da fonte, distância das margens inferiores da imagem e centralização do texto */
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -48,6 +57,7 @@
     text-align: center;
 }
 
+/*Aqui, estiliza-se o texto contador superior a esquerda das imagens, definindo color, tamanho da fonte, distancia da margem superior, e posicionando por sobre a imagem*/
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -56,6 +66,7 @@
     top: 0;
 }
 
+/**/
 .ponto {
     cursor: pointer;
     height: 15px;
@@ -67,16 +78,19 @@
     transition: background-color 0.6s ease;
 }
 
+/*Utilizado para deixar o ponto selecionado em destaque com uma cor diferente*/
 .active,
 .ponto:hover {
     background-color: #717171;
 }
 
+/*utiliza-se da animation fade para criar a transição de desaparecer entre uma imagem e outra no carrossel*/
 .fade {
     animation-name: fade;
     animation-duration: 2.5s;
 }
 
+/**/
 @keyframes fade {
     from {
         opacity: .2
