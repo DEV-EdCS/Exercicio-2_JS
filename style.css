@@ -90,7 +90,7 @@
     animation-duration: 2.5s;
 }
 
-/* Define os estágios da animação fade, onde a opacidade começa em 0.2 e vai para 1, criando um efeito de desaparecimento */
+/* Define os estágios da transição fade, onde a opacidade começa em 0.2 e vai para 1, criando um efeito de desaparecimento */
 @keyframes fade {
     from {
         opacity: .2
